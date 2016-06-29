@@ -7,13 +7,21 @@ class CreateOrderItemsTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *  APOS CRIADO OS ARQUIVOS DE MIGRATIONS DAS NOVAS ENTIDADES
+     * DEVEMOS ENTAO, EXECUTAR O COMANDO: php artisan migrate
      * @return void
      */
     public function up()
     {
         Schema::create('order_items', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('product_id')->unsigned();
+            $table->foreign('product_id')->references('id')->on('products');
+
+            $table->integer('order_id')->unsigned();
+            $table->foreign('order_id')->references('id')->on('orders');
+            $table->decimal('price');
+            $table->smallInteger('qtd');
             $table->timestamps();
         });
     }
