@@ -277,6 +277,8 @@ class ComposerStaticInitf211cee5a200356fc666f110c9cb3c06
         'CategoryTableSeeder' => __DIR__ . '/../..' . '/database/seeds/CategoryTableSeeder.php',
         'CreateCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_27_173119_create_categories_table.php',
         'CreateClientsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_27_220728_create_clients_table.php',
+        'CreateOrderItemsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_29_215831_create_order_items_table.php',
+        'CreateOrdersTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_29_215754_create_orders_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateProductsTable' => __DIR__ . '/../..' . '/database/migrations/2016_06_27_212226_create_products_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
